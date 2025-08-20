@@ -1,0 +1,15 @@
+services:
+  api:
+    build: ./backend
+    ports: ["8000:8000"]
+    volumes: ["./backend:/app"]
+    environment:
+      - LL_DATA_DIR=/app/app/storage
+  web:
+    working_dir: /app
+    image: node:18
+    command: sh -c "npm ci && npm run dev -- --host"
+    ports: ["5173:5173"]
+    volumes:
+      - ./frontend:/app
+    depends_on: [api]
