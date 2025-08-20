@@ -55,45 +55,51 @@ docker compose up --build
 
 ## Project Structure
 ```
-LedgerLens/
-  backend/
-    app/
-      main.py
-      db.py
-      models.py
-      schemas.py
-      routers/
-        entries.py
-      services/
-        integrity.py
-        storage.py
-      security/
-        keys.py
-      tests/
-        test_integrity.py
-    requirements.txt
-    Dockerfile
-  frontend/
-    index.html
-    package.json
-    vite.config.ts
-    postcss.config.js
-    tailwind.config.js
-    src/
-      main.tsx
-      App.tsx
-      styles.css
-      lib/api.ts
-      components/
-        EntryForm.tsx
-        EntryList.tsx
-        VerifyBadge.tsx
-  docker-compose.yml
-  scripts/
-    dev.sh
-    seed.py
-  .github/workflows/ci.yml
-  LICENSE
+    LedgerLens/
+    ├── backend/
+    │   ├── app/
+    │   │   ├── main.py
+    │   │   ├── db.py
+    │   │   ├── models.py
+    │   │   ├── schemas.py
+    │   │   ├── routers/
+    │   │   │   └── entries.py
+    │   │   ├── services/
+    │   │   │   ├── integrity.py
+    │   │   │   └── storage.py
+    │   │   ├── security/
+    │   │   │   └── keys.py
+    │   │   └── tests/
+    │   │       └── test_integrity.py
+    │   ├── requirements.txt
+    │   └── Dockerfile
+    │
+    ├── frontend/
+    │   ├── index.html
+    │   ├── package.json
+    │   ├── vite.config.ts
+    │   ├── postcss.config.js
+    │   ├── tailwind.config.js
+    │   └── src/
+    │       ├── main.tsx
+    │       ├── App.tsx
+    │       ├── styles.css
+    │       ├── lib/
+    │       │   └── api.ts
+    │       └── components/
+    │           ├── EntryForm.tsx
+    │           ├── EntryList.tsx
+    │           └── VerifyBadge.tsx
+    │
+    ├── docker-compose.yml
+    ├── scripts/
+    │   ├── dev.sh
+    │   └── seed.py
+    ├── .github/
+    │   └── workflows/
+    │       └── ci.yml
+    └── LICENSE
+
 ```
 
 ---
