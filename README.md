@@ -92,12 +92,6 @@ docker compose up --build
     │           └── VerifyBadge.tsx
     │
     ├── docker-compose.yml
-    ├── scripts/
-    │   ├── dev.sh
-    │   └── seed.py
-    ├── .github/
-    │   └── workflows/
-    │       └── ci.yml
     └── LICENSE
 
 ```
