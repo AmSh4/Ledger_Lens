@@ -3,9 +3,9 @@
 A local‑first, tamper‑evident notebook for experiments, research, and lab logs.
 Each entry is chained with cryptographic hashes (like a mini blockchain), so any edit breaks the chain and shows as **tampered**. Attach files, tag entries, verify integrity, and export safely.
 
-## Why this is recruiter‑attracting
+## Why this?
 - **Rare but useful**: tamper‑evident logging is common in regulated industries but uncommon in student projects.
-- **Complex but doable**: clear FastAPI backend + React/Tailwind frontend + SQLite + hashing chain + tests + Docker + CI.
+- **doable**: clear FastAPI backend + React/Tailwind frontend + SQLite + hashing chain + tests + Docker + CI.
 - **Local-first privacy**: runs entirely on your machine; no cloud required.
 
 ---
